@@ -40,7 +40,7 @@ namespace MyShop.WebUI.Controllers
             else
             {
                 context.Insert(productCategory);
-                context.Comit();
+                context.Commit();
 
                 return RedirectToAction("Index");
             }
@@ -78,7 +78,7 @@ namespace MyShop.WebUI.Controllers
 
                 productCategoryToEdit.Category = product.Category;
 
-                context.Comit();
+                context.Commit();
 
                 return RedirectToAction("Index");
             }
@@ -112,7 +112,7 @@ namespace MyShop.WebUI.Controllers
             else
             {
                 context.Delete(Id);
-                context.Comit();
+                context.Commit();
                 return RedirectToAction("Index");
             }
         }

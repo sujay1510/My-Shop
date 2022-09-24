@@ -52,7 +52,7 @@ namespace MyShop.WebUI.Controllers
                     file.SaveAs(Server.MapPath("//Content//ProductImages//") + product.Image);
                 }
                context.Insert(product);
-               context.Comit();
+               context.Commit();
 
                return RedirectToAction("Index");
            }
@@ -103,7 +103,7 @@ namespace MyShop.WebUI.Controllers
                 productToEdit.Name = product.Name;
                 productToEdit.Price = product.Price;
 
-                context.Comit();
+                context.Commit();
 
                 return RedirectToAction("Index");
             }
@@ -137,7 +137,7 @@ namespace MyShop.WebUI.Controllers
             else
             {
                 context.Delete(Id);
-                context.Comit();
+                context.Commit();
                 return RedirectToAction("Index");
             }
         }

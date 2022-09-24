@@ -25,7 +25,7 @@ namespace MyShop.DataAccess.SQL
             return dbSet;
         }
 
-        public void Comit()
+        public void Commit()
         {
             context.SaveChanges();
         }

@@ -25,7 +25,7 @@ namespace MyShop.DataAccess.InMemory
             }
         }
 
-        public void Comit()
+        public void Commit()
         {
             cache[className] = items;
         }
