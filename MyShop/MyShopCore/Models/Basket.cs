@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyShopCore.Models
+namespace MyShop.Core.Models
 {
     public class Basket : BaseEntity
     {
