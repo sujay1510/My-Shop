@@ -34,7 +34,7 @@ namespace MyShopServices
                 string basketId = cookie.Value;
                 if (!string.IsNullOrEmpty(basketId))
                 {
-                    basket = basketContext.Find(basketId)
+                    basket = basketContext.Find(basketId);
                 }
                 else
                 {
